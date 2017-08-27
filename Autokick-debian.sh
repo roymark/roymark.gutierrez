@@ -4,7 +4,7 @@
 cd
 
 # download userlimit
-wget https://raw.githubusercontent.com/asyrafazhan/python/master/conf/userlimit-debian.sh
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/userlimit-debian.sh
 chmod +x userlimit-debian.sh
 
 # setup cron for userlimit
