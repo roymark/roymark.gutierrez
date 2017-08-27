@@ -189,16 +189,16 @@ download script
 #wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/install-premiumscript.sh -O - -o /dev/null|sh
 
 
-wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
-wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
+wget -O refresh "https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/refresh.sh"
+wget -O speedtest "https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/speedtest_cli.py"
+wget -O about "https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/about.sh"
 chmod +x refresh
 chmod +x speedtest
 chmod +x about
 
 # User Status
 cd
-wget https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/status
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/status
 chmod +x status
 
 # Restart Service
@@ -215,14 +215,14 @@ service webmin restart
 
 #ocs_panel
 cd
-wget https://raw.githubusercontent.com/jhelson15/re-construction/master/OCS-Panel.sh
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/OCS-Panel.sh
 chmod +x OCS-Panel.sh
 bash OCS-Panel.sh
 
 
 # info
 clear
-echo "Command by Jelson"
+echo "Command by Roy Mark Gutierrez"
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:80/client.tar)"
 echo "OpenSSH  : 22, 143"
 echo "Dropbear : 109, 110, 443"
