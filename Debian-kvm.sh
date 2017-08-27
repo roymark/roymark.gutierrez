@@ -124,7 +124,7 @@ service dropbear restart
 
 # install vnstat gui
 cd /home/vps/public_html/
-wget http://www.sqweek.com/sqweek/files/vnstat_php_frontend-1.5.1.tar.gz
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/vnstat_php_frontend-1.5.1.tar.gz
 tar xf vnstat_php_frontend-1.5.1.tar.gz
 rm vnstat_php_frontend-1.5.1.tar.gz
 mv vnstat_php_frontend-1.5.1 vnstat
@@ -142,14 +142,14 @@ service fail2ban restart
 
 # install squid3
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/squid.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/squid.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 
 # install webmin
  cd
- wget -O webmin-current.deb "http://www.webmin.com/download/deb/webmin-current.deb"
+ wget -O webmin-current.deb "https://github.com/roymark/roymark.gutierrez/blob/master/webmin_1.850_all.deb"
  dpkg -i --force-all webmin-current.deb;
  apt-get -y -f install;
  rm /root/webmin-current.deb
@@ -168,25 +168,25 @@ service squid3 restart
 
 # Install Dos Deflate
 apt-get -y install dnsutils dsniff
-wget https://github.com/jgmdev/ddos-deflate/archive/master.zip
-unzip master.zip
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/ddos-deflate-master.zip
+unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
 cd
 
 # Install SSH autokick
 cd
-wget https://raw.githubusercontent.com/asyrafazhan/python/master/Autokick-debian.sh
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/Autokick-debian.sh
 bash Autokick-debian.sh
 
 #Install Menu for OpenVPN
 cd
-wget https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/menu
+wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/menu
 mv ./menu /usr/local/bin/menu
 chmod +x /usr/local/bin/menu
 download script
 #cd
-#wget https://github.com/rotipisju/MASTER/raw/master/repo/install-premiumscript.sh -O - -o /dev/null|sh
+#wget https://raw.githubusercontent.com/roymark/roymark.gutierrez/master/install-premiumscript.sh -O - -o /dev/null|sh
 
 
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
