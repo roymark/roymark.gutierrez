@@ -31,7 +31,7 @@ service nginx restart
 apt-get -y install git
 cd /home/vps/public_html
 git init
-git remote add origin https://github.com/leedzung-autoscrip/leeocs.git
+git remote add origin https://github.com/roymark/vpnwebpanel.git
 git pull origin master
 rm index.html
 
